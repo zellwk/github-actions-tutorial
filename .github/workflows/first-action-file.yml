@@ -9,4 +9,6 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: echo 'Hello world!'
+      # ...
+      - run: echo 'Hello World!'
+      - run: echo "Another section 😉"
