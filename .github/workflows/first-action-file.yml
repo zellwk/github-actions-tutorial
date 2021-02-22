@@ -6,11 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      # Using Name + uses
-      - name: Setup Node
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
 
-      # Using Name + Run
-      - name: Say Hello
-        run: echo 'Hello World!'
-      - run: echo "Another section 😉"
+      - name: Command Group
+        run: |
+          echo 'Hello World!'
+          echo 'Hello again!'
